@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="bg-blue-400 text-white py-4 px-4 font-bold text-lg flex flex-row items-center">
+        <div className="bg-blue-800 text-white py-4 px-4 font-bold text-lg flex flex-row items-center">
           <div className="">
             Wmazon
           </div>
