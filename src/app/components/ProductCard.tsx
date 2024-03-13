@@ -27,10 +27,12 @@ const ProductCard: React.FC<Props> = ({ product, handleProductSelect, balance })
     return (
         <div className="flex border border-gray-200 my-2">
             <img src={product.image_url} className='w-64 h-64 object-contain' />
-            <div className="flex flex-col ml-4">
-                <div className="font-bold hover:text-orange-400 cursor-pointer">
+            <div className="flex flex-col ml-4 w-full pr-2">
+                <div className="font-bold hover:text-orange-400 cursor-pointer flex flex-row justify-between w-full">
                     {product.name}
+                    <div className="font-normal text-sm">ID: {product.id}</div>
                 </div>
+
                 <Rating value={product.average_rating} readOnly />
                 10K+ bought in past month
 
@@ -40,7 +42,7 @@ const ProductCard: React.FC<Props> = ({ product, handleProductSelect, balance })
 
                 <div>
                     <div className="font-bold text-lg">
-                        $22.99
+                        {product.price} ETH
                     </div>
                     <div>List: $39.99</div>
                 </div>

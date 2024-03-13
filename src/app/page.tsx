@@ -11,7 +11,7 @@ import { writeContract } from '@wagmi/core'
 import products from './mockdata/products.json';
 import { config } from '@/config';
 import { parseEther } from 'viem';
-import { abi } from './abi';
+import abi from './abi.json';
 
 import { useBalance, useAccount } from 'wagmi'
 import { useAppDispatch, useAppSelector } from '@/lib/hooks';
@@ -68,12 +68,10 @@ const ProductList: React.FC = () => {
   const handleProductSelect = async (product: Product) => {
     await writeContract(config, {
       abi,
-      address: '0x6b175474e89094c44da98b954eedeac495271d0f',
-      functionName: 'transferFrom',
+      address: '0x0A63683644c6aa544570C4CFfd5361C6441531D7',
+      functionName: 'purchase',
       args: [
-        '0xd2135CfB216b74109775236E36d4b433F1DF507B',
-        '0xA0Cf798816D4b9b9866b5330EEa46a18382f251e',
-        123n,
+        product.id,
       ],
       value: parseEther(String(product.price)),
     })
