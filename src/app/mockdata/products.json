@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Robot AA",
+        "name": "BENGOO G9000 Stereo Gaming Headset for PS4 PC Xbox One PS5 Controller, Noise Cancelling Over Ear Headphones with Mic, LED Light, Bass Surround, Soft Memory",
         "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.",
         "price": 8.93,
         "quantity_in_stock": 937,
@@ -9,11 +9,11 @@
         "category": "clothing",
         "release_date": "2022-07-14T13:29:26Z",
         "average_rating": 1.1,
-        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff&text=Robot AA"
+        "image_url": "https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_UY218_.jpg"
     },
     {
         "id": 2,
-        "name": "Robot A",
+        "name": "Logitech G335 Wired Gaming Headset, with Flip to Mute Microphone, 3.5mm Audio Jack, Memory Foam Earpads, Lightweight, Compatible with PC, PlayStation, Xbox, Nintendo",
         "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
         "price": 1.67,
         "quantity_in_stock": 984,
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "name": "Robot AB",
+        "name": "Razer BlackShark V2 X Gaming Headset: 7.1 Surround Sound - 50mm Drivers - Memory Foam Cushion - for PC, Mac, PS4, PS5, Switch - 3.5mm Audio Jack - White",
         "description": "In eleifend quam a odio. In hac habitasse platea dictumst.",
         "price": 2.79,
         "quantity_in_stock": 926,
@@ -37,7 +37,7 @@
     },
     {
         "id": 4,
-        "name": "Free Robot",
+        "name": "PHOINIKAS Gaming Headset for PS4, Xbox One, PC, Laptop, Mac, Nintendo Switch, 3.5MM PS4 Stereo Headset Over Ear Headphones with Noise-Cancelling Mic, Bass",
         "description": "Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus.",
         "price": 0,
         "quantity_in_stock": 319,

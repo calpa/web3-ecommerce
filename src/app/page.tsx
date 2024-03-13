@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import Card from './components/Card';
+import Card from './components/ProductCard';
 import { CircularProgress } from '@mui/material';
 import { writeContract } from '@wagmi/core'
 
@@ -78,7 +78,9 @@ const ProductList: React.FC = () => {
   return (
     <div className="p-4">
       <div className="flex mb-4">
-        <h1 className="text-3xl font-bold">Web3 Shop</h1>
+        <div>
+          {sortedProducts.length} over 30,000 results for <br /><div className="text-orange-800">&quot;gaming heatsets&quot;</div>
+        </div>
         {/* {account.address} */}
         {/* {String(balance?.data?.value)} */}
         <ButtonGroup variant="outlined" className="ml-auto mr-2">
@@ -115,7 +117,9 @@ const ProductList: React.FC = () => {
         <w3m-button />
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="">
+        <div className="font-bold">Results</div>
+        <div>Check each product page for other buying options.</div>
         {sortedProducts.length > 0 ? (
           sortedProducts.map((product) => (
             <Card key={product.id} product={product} handleProductSelect={handleProductSelect}
