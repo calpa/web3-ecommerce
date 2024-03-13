@@ -66,15 +66,19 @@ const ProductList: React.FC = () => {
 
   // TODO: Change Contract address, abi, function name, args
   const handleProductSelect = async (product: Product) => {
-    await writeContract(config, {
+    const result = await writeContract(config, {
       abi,
-      address: '0x0A63683644c6aa544570C4CFfd5361C6441531D7',
+      address: '0x8a4243234183224dF5Cc5C9fB2007Ab1548bdf96',
       functionName: 'purchase',
       args: [
         product.id,
       ],
       value: parseEther(String(product.price)),
-    })
+    });
+
+    if (result) {
+      alert("Success");
+    }
   };
 
   const searchState = useAppSelector(state => state.search);
