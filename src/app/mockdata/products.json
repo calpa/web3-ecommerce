@@ -9,7 +9,7 @@
         "category": "clothing",
         "release_date": "2022-07-14T13:29:26Z",
         "average_rating": 1.1,
-        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff&text=Robot AA"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
         "category": "sports",
         "release_date": "2013-06-05T23:28:07Z",
         "average_rating": 1.1,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "category": "sports",
         "release_date": "2016-10-16T13:52:27Z",
         "average_rating": 2.5,
-        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff&text=Robot"
     },
     {
         "id": 4,
@@ -45,7 +45,7 @@
         "category": "clothing",
         "release_date": "2019-05-17T21:08:05Z",
         "average_rating": 1.8,
-        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000"
+        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000&text=Robot"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
         "category": "electronics",
         "release_date": "2019-12-03T03:40:44Z",
         "average_rating": 2.5,
-        "image_url": "http://dummyimage.com/300x300.png/cc0000/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/cc0000/ffffff&text=Robot"
     },
     {
         "id": 6,
@@ -69,7 +69,7 @@
         "category": "beauty",
         "release_date": "2013-10-02T06:37:59Z",
         "average_rating": 3.4,
-        "image_url": "http://dummyimage.com/300x300.png/cc0000/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/cc0000/ffffff&text=Robot"
     },
     {
         "id": 7,
@@ -81,11 +81,11 @@
         "category": "sports",
         "release_date": "2020-02-12T00:23:24Z",
         "average_rating": 2.2,
-        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff&text=Robot"
     },
     {
         "id": 8,
-        "name": "Robot F",
+        "name": "Best Robot",
         "description": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.",
         "price": 6.26,
         "quantity_in_stock": 378,
@@ -93,7 +93,7 @@
         "category": "home decor",
         "release_date": "2018-12-15T14:06:23Z",
         "average_rating": 5.0,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 9,
@@ -105,7 +105,7 @@
         "category": "sports",
         "release_date": "2011-01-11T00:26:03Z",
         "average_rating": 4.1,
-        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff&text=Robot"
     },
     {
         "id": 10,
@@ -117,7 +117,7 @@
         "category": "sports",
         "release_date": "2017-01-27T11:35:01Z",
         "average_rating": 4.6,
-        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000"
+        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000&text=Robot"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@
         "category": "clothing",
         "release_date": "2015-01-16T19:10:07Z",
         "average_rating": 3.3,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 12,
@@ -141,7 +141,7 @@
         "category": "beauty",
         "release_date": "2012-04-30T19:13:28Z",
         "average_rating": 2.6,
-        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000"
+        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000&text=Robot"
     },
     {
         "id": 13,
@@ -153,7 +153,7 @@
         "category": "beauty",
         "release_date": "2014-12-11T19:38:02Z",
         "average_rating": 3.4,
-        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000"
+        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000&text=Robot"
     },
     {
         "id": 14,
@@ -165,7 +165,7 @@
         "category": "home decor",
         "release_date": "2013-07-31T05:52:41Z",
         "average_rating": 2.7,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 15,
@@ -177,7 +177,7 @@
         "category": "beauty",
         "release_date": "2018-06-17T04:03:40Z",
         "average_rating": 1.9,
-        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000"
+        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000&text=Robot"
     },
     {
         "id": 16,
@@ -189,7 +189,7 @@
         "category": "clothing",
         "release_date": "2012-11-03T06:23:55Z",
         "average_rating": 1.4,
-        "image_url": "http://dummyimage.com/300x300.png/cc0000/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/cc0000/ffffff&text=Robot"
     },
     {
         "id": 17,
@@ -201,7 +201,7 @@
         "category": "electronics",
         "release_date": "2011-07-25T04:33:38Z",
         "average_rating": 1.2,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 18,
@@ -213,7 +213,7 @@
         "category": "electronics",
         "release_date": "2021-12-20T01:36:53Z",
         "average_rating": 3.8,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 19,
@@ -225,7 +225,7 @@
         "category": "sports",
         "release_date": "2014-05-05T13:32:11Z",
         "average_rating": 2.8,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 20,
@@ -237,7 +237,7 @@
         "category": "beauty",
         "release_date": "2019-04-27T03:21:18Z",
         "average_rating": 1.3,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 21,
@@ -249,7 +249,7 @@
         "category": "home decor",
         "release_date": "2012-01-14T06:26:27Z",
         "average_rating": 2.9,
-        "image_url": "http://dummyimage.com/300x300.png/cc0000/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/cc0000/ffffff&text=Robot"
     },
     {
         "id": 22,
@@ -261,7 +261,7 @@
         "category": "home decor",
         "release_date": "2021-01-22T16:54:03Z",
         "average_rating": 3.0,
-        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000"
+        "image_url": "http://dummyimage.com/300x300.png/dddddd/000000&text=Robot"
     },
     {
         "id": 23,
@@ -273,7 +273,7 @@
         "category": "electronics",
         "release_date": "2019-03-12T19:16:21Z",
         "average_rating": 4.1,
-        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/5fa2dd/ffffff&text=Robot"
     },
     {
         "id": 24,
@@ -285,7 +285,7 @@
         "category": "home decor",
         "release_date": "2020-09-17T16:29:10Z",
         "average_rating": 3.0,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     },
     {
         "id": 25,
@@ -297,6 +297,6 @@
         "category": "home decor",
         "release_date": "2015-05-24T17:42:52Z",
         "average_rating": 3.5,
-        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff"
+        "image_url": "http://dummyimage.com/300x300.png/ff4444/ffffff&text=Robot"
     }
 ]
