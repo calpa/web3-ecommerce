@@ -6,7 +6,7 @@ import { walletConnect } from "wagmi/connectors";
 import { customChain } from "./customChain";
 
 // Get projectId at https://cloud.walletconnect.com
-export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
+export const projectId = process.env.NEXT_PUBLIC_PROJECT_ID as string;
 
 if (!projectId) {
   console.error("Please set NEXT_PUBLIC_PROJECT_ID");
