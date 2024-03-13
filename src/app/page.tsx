@@ -1,14 +1,23 @@
 'use client'
 
-export default function Home() {
+import Card from './components/Card';
+
+// Generated from https://www.mockaroo.com/schemas/new
+import products from './mockdata/products.json';
+
+const ProductList = () => {
+  const handleProductSelect = () => { };
+
   return (
-    <div className="">
-      <div className="flex flex-row justify-end border border-black">
-        <w3m-button />
+    <div className="p-4">
+      <h1 className="text-3xl font-bold mb-4">Shop</h1>
+      <div className="grid grid-cols-3 gap-4">
+        {products.map((product) => (
+          <Card key={product.id} product={product} handleProductSelect={handleProductSelect} />
+        ))}
       </div>
-
-      <h1>Web3 eCommerce</h1>
-
     </div>
   );
-}
+};
+
+export default ProductList;
