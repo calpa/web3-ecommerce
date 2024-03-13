@@ -73,7 +73,6 @@ const ProductList: React.FC = () => {
       ],
       value: parseEther(String(product.price)),
     })
-    // console.log(product);
   };
 
   return (

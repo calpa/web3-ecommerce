@@ -12,7 +12,7 @@ export const abi = [
     {
         type: 'function',
         name: 'transferFrom',
-        stateMutability: 'nonpayable',
+        stateMutability: 'payable',
         inputs: [
             { name: 'sender', type: 'address' },
             { name: 'recipient', type: 'address' },
