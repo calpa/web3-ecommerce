@@ -80,8 +80,8 @@ const ProductList: React.FC = () => {
     <div className="p-4">
       <div className="flex mb-4">
         <h1 className="text-3xl font-bold">Web3 Shop</h1>
-        {account.address}
-        {String(balance?.data?.value)}
+        {/* {account.address} */}
+        {/* {String(balance?.data?.value)} */}
         <ButtonGroup variant="outlined" className="ml-auto mr-2">
           <Button
             onClick={() => sortProductsByRating('asc')}
