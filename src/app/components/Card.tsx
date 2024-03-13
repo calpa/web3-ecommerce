@@ -19,9 +19,10 @@ interface Product {
 interface Props {
     product: Product;
     handleProductSelect: (product: Product) => void;
+    balance: number;
 }
 
-const ProductCard: React.FC<Props> = ({ product, handleProductSelect }) => {
+const ProductCard: React.FC<Props> = ({ product, handleProductSelect, balance }) => {
 
     return (
         <Card className="border border-gray-200 rounded-lg overflow-hidden transition duration-300 shadow-md hover:shadow-lg">
@@ -45,6 +46,7 @@ const ProductCard: React.FC<Props> = ({ product, handleProductSelect }) => {
             <Button
                 onClick={() => handleProductSelect(product)}
                 className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-b-lg focus:outline-none focus:shadow-outline w-full"
+                disabled={product.price > balance}
             >
                 Purchase
             </Button>

@@ -37,14 +37,14 @@
     },
     {
         "id": 4,
-        "name": "Robot B",
+        "name": "Free Robot",
         "description": "Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus.",
-        "price": 0.41,
+        "price": 0,
         "quantity_in_stock": 319,
         "brand": "Meedoo",
         "category": "clothing",
         "release_date": "2019-05-17T21:08:05Z",
-        "average_rating": 1.8,
+        "average_rating": 1,
         "image_url": "http://dummyimage.com/300x300.png/dddddd/000000&text=Robot"
     },
     {
