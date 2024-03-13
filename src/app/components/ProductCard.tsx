@@ -25,7 +25,7 @@ interface Props {
 const ProductCard: React.FC<Props> = ({ product, handleProductSelect, balance }) => {
 
     return (
-        <div className="flex border border-gray-400 my-2">
+        <div className="flex border border-gray-200 my-2">
             <img src={product.image_url} className='w-64 h-64 object-contain' />
             <div className="flex flex-col ml-4">
                 <div className="font-bold hover:text-orange-400 cursor-pointer">
@@ -34,19 +34,22 @@ const ProductCard: React.FC<Props> = ({ product, handleProductSelect, balance })
                 <Rating value={product.average_rating} readOnly />
                 10K+ bought in past month
 
-                <div>
+                <div className="bg-red-800 text-white p-1 text-xs w-[128px] text-center">
                     Limited time deal
                 </div>
 
                 <div>
-                    $22.99 <div>List: $39.99</div>
+                    <div className="font-bold text-lg">
+                        $22.99
+                    </div>
+                    <div>List: $39.99</div>
                 </div>
 
                 <div>FREE delivery</div>
                 <div>on your first order</div>
                 <Button
                     onClick={() => handleProductSelect(product)}
-                    className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline w-full"
+                    className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline w-32"
                     disabled={product.price > Number(balance)}
                 >
                     Purchase

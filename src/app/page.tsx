@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Card from './components/ProductCard';
@@ -14,6 +14,10 @@ import { parseEther } from 'viem';
 import { abi } from './abi';
 
 import { useBalance, useAccount } from 'wagmi'
+import { useAppDispatch, useAppSelector } from '@/lib/hooks';
+import { decrement, increment } from '@/lib/features/counter/counterSlice';
+import Search from './components/Search';
+import { change } from '@/lib/features/search/searchSlice';
 
 
 interface Product {
@@ -75,64 +79,95 @@ const ProductList: React.FC = () => {
     })
   };
 
+  const searchState = useAppSelector(state => state.search);
+  const dispatch = useAppDispatch();
+  const searchValue = searchState.value;
+
+  const filteredProducts = useMemo(() => {
+    return sortedProducts.filter(product => {
+      if (product.name.toLowerCase().includes(searchValue) || product.description.toLowerCase().includes(searchValue)) {
+        return true;
+      }
+    });
+  }, [sortedProducts, searchValue])
+
+
+
   return (
-    <div className="p-4">
-      <div className="flex mb-4">
-        <div>
-          {sortedProducts.length} over 30,000 results for <br /><div className="text-orange-800">&quot;gaming heatsets&quot;</div>
+    <div>
+      <div className="bg-blue-800 text-white py-4 px-4 font-bold text-lg flex flex-row items-center">
+        <div className="">
+          Wmazon
         </div>
-        {/* {account.address} */}
-        {/* {String(balance?.data?.value)} */}
-        <ButtonGroup variant="outlined" className="ml-auto mr-2">
-          <Button
-            onClick={() => sortProductsByRating('asc')}
-            style={{ backgroundColor: ratingSortOrder === 'asc' ? '#ccc' : 'transparent' }}
-            disabled={ratingSortOrder === 'asc'}
-          >
-            Rating (ASC)
-          </Button>
-          <Button
-            onClick={() => sortProductsByRating('desc')}
-            style={{ backgroundColor: ratingSortOrder === 'desc' ? '#ccc' : 'transparent' }}
-            disabled={ratingSortOrder === 'desc'}
-          >
-            Rating (DESC)
-          </Button>
-          <Button
-            onClick={() => sortProductsByPrice('asc')}
-            style={{ backgroundColor: priceSortOrder === 'asc' ? '#ccc' : 'transparent' }}
-            disabled={priceSortOrder === 'asc'}
-          >
-            Price (ASC)
-          </Button>
-          <Button
-            onClick={() => sortProductsByPrice('desc')}
-            style={{ backgroundColor: priceSortOrder === 'desc' ? '#ccc' : 'transparent' }}
-            disabled={priceSortOrder === 'desc'}
-          >
-            Price (DESC)
-          </Button>
-        </ButtonGroup>
+        <Search />
 
-        <w3m-button />
       </div>
-
-      <div className="">
-        <div className="font-bold">Results</div>
-        <div>Check each product page for other buying options.</div>
-        {sortedProducts.length > 0 ? (
-          sortedProducts.map((product) => (
-            <Card key={product.id} product={product} handleProductSelect={handleProductSelect}
-              balance={balance?.data?.value}
-            />
-          ))
-        ) : (
+      <div className="p-4">
+        <div className="flex mb-4">
           <div>
-            <CircularProgress />
+            {filteredProducts.length} over 30,000 results for <br /><div className="text-orange-800">&quot;{searchValue ? searchValue : 'All Products'}&quot;</div>
           </div>
-        )}
+          {/* <button onClick={() => dispatch(increment())}>Increment</button>
+        <button onClick={() => dispatch(decrement())}>Decrement</button>
+
+        {counterState.value} */}
+          {/* {account.address} */}
+          {/* {String(balance?.data?.value)} */}
+          <ButtonGroup variant="outlined" className="ml-auto mr-2">
+            <Button
+              onClick={() => sortProductsByRating('asc')}
+              style={{ backgroundColor: ratingSortOrder === 'asc' ? '#ccc' : 'transparent' }}
+              disabled={ratingSortOrder === 'asc'}
+            >
+              Rating (ASC)
+            </Button>
+            <Button
+              onClick={() => sortProductsByRating('desc')}
+              style={{ backgroundColor: ratingSortOrder === 'desc' ? '#ccc' : 'transparent' }}
+              disabled={ratingSortOrder === 'desc'}
+            >
+              Rating (DESC)
+            </Button>
+            <Button
+              onClick={() => sortProductsByPrice('asc')}
+              style={{ backgroundColor: priceSortOrder === 'asc' ? '#ccc' : 'transparent' }}
+              disabled={priceSortOrder === 'asc'}
+            >
+              Price (ASC)
+            </Button>
+            <Button
+              onClick={() => sortProductsByPrice('desc')}
+              style={{ backgroundColor: priceSortOrder === 'desc' ? '#ccc' : 'transparent' }}
+              disabled={priceSortOrder === 'desc'}
+            >
+              Price (DESC)
+            </Button>
+          </ButtonGroup>
+
+          <w3m-button />
+        </div>
+
+        <div className="">
+          <div className="font-bold">Results</div>
+          <div>Check each product page for other buying options.</div>
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <Card key={product.id} product={product} handleProductSelect={handleProductSelect}
+                balance={balance?.data?.value}
+              />
+            ))
+          ) : (
+            <div className="flex flex-row justify-center">
+              <button onClick={() => dispatch(change(''))}
+                className="bg-blue-400 rounded-md p-4 text-white"
+              >Reset Search</button>
+              {/* <CircularProgress /> */}
+            </div>
+          )}
+        </div>
       </div>
     </div>
+
   );
 };
 

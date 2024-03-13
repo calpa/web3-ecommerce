@@ -1,14 +1,18 @@
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import DirectionsIcon from '@mui/icons-material/Directions';
+// import DirectionsIcon from '@mui/icons-material/Directions';
+import { useAppDispatch, useAppSelector } from '@/lib/hooks';
+import { change } from '@/lib/features/search/searchSlice';
 
 export default function Search() {
-    const value = 'gaming headset';
+    const searchState = useAppSelector(state => state.search);
+    const dispatch = useAppDispatch();
+    const value = searchState.value;
 
     return (
         <Paper
@@ -24,6 +28,7 @@ export default function Search() {
                 placeholder="Search Wmazon"
                 inputProps={{ 'aria-label': value }}
                 value={value}
+                onChange={(event) => dispatch(change(event.target.value))}
             />
             <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
                 <SearchIcon />

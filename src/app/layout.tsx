@@ -7,6 +7,7 @@ import { cookieToInitialState } from 'wagmi'
 import { config } from '@/config'
 import Web3ModalProvider from '@/context'
 import Search from './components/Search'
+import StoreProvider from './StoreProvider'
 
 export const metadata: Metadata = {
   title: 'Wmazon',
@@ -19,18 +20,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   const initialState = cookieToInitialState(config, headers().get('cookie'))
-  return (
-    <html lang="en">
-      <body>
-        <div className="bg-blue-800 text-white py-4 px-4 font-bold text-lg flex flex-row items-center">
-          <div className="">
-            Wmazon
-          </div>
-          <Search />
 
-        </div>
-        <Web3ModalProvider initialState={initialState}>{children}</Web3ModalProvider>
-      </body>
-    </html>
+  return (
+    <StoreProvider count={0}>
+      <html lang="en">
+        <body>
+          <Web3ModalProvider initialState={initialState}>{children}</Web3ModalProvider>
+        </body>
+      </html>
+    </StoreProvider>
   )
 }
