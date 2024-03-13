@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  --wui-color-inherit: black;
+  /* --wui-color-fg-100: black; */
+  /* --wui-color-fg-200: black; */
+}
